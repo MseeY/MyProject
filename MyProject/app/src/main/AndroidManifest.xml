@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".eventbus.EBActivity"/>
         <activity android:name=".eventbus.SecondActivity"/>
+        <service android:name=".activityorservice.ServiceOne"/>
+        <activity android:name=".activityorservice.ActivityOne"/>
     </application>
 
 

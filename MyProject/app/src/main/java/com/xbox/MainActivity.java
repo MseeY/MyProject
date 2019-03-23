@@ -6,25 +6,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.xbox.activityorservice.ActivityOne;
 import com.xbox.eventbus.EBActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mBtnEB;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mBtnEB = findViewById(R.id.btn_eventbus);
-        mBtnEB.setOnClickListener(this);
+        findViewById(R.id.btn_eventbus).setOnClickListener(this);
+        findViewById(R.id.btn_activity_or_service).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_eventbus:
-                Intent intent = new Intent(MainActivity.this, EBActivity.class);
+                intent = new Intent(MainActivity.this, EBActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_activity_or_service:
+                intent = new Intent(MainActivity.this, ActivityOne.class);
                 startActivity(intent);
                 break;
         }
