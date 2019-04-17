@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_title_line"/>
+    
+    <TextView 
+        android:id="@+id/tv_last_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/common_text_size"
+        android:layout_marginTop="10dp"
+        android:text="您上次登录的帐号是：jhsoghsod"/>
+    <TextView 
+        android:textSize="@dimen/common_text_size"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="欢迎再次来到欢动游戏！"/>
+    
+     <Button
+        android:id="@+id/bt_enter_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_blue_bt"
+        android:text="进入游戏"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+     
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_switch_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/switch_account"
+            android:textColor="#1db1e7"
+            android:textSize="@dimen/blue_font_size" />
+    </RelativeLayout>
+
+</LinearLayout>

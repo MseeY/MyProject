@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:android="http://schemas.android.com/apk/res/android">
+<permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+<uses-permission android:name="android.permission.BLUETOOTH"/> 
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/> 
+<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.webkit.permission.PLUGIN" />
+<uses-permission android:name ="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+<uses-permission android:name="android.permission.BLUETOOTH"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>	
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>	
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+</permission>
+<components>
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.Run" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.Run" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="uppay" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.ContainerActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.UserCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.CurentCountActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.ModifyPassActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.BindPhoneActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.ConfimRenActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.BindPhoneFirstActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.ChangeBindActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.awo.sdk_new.activity.NoticeListActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+
+        <activity
+            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.PrePayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.NotifyActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        <service android:name="com.awo.sdk_new.service.FloatService" >
+        </service>
+        <!-- alipay sdk end -->
+        <!--
+        <service android:name="com.awo.sdk_new.service.UpdateService" >
+        </service>
+        -->
+        <receiver android:name="com.awo.sdk_new.service.Receiver" >
+            <intent-filter>
+                <action android:name="com.awo.sdk_new" />
+            </intent-filter>
+        </receiver>
+	<meta-data
+            android:name="APPID"
+            android:value="f0418373-1199-11e6-b261-06e4ab53f73b" />
+        <meta-data
+            android:name="APPKEY"
+            android:value="dce989a4-1199-11e6-ac95-782bcb736183" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="m_1" />
+			
+		<meta-data
+            android:name="X_APPLICATION_PROXY_NAME"
+            android:value="com.xbox.sdk.HDApplication" />
+</components>
+</config>
+

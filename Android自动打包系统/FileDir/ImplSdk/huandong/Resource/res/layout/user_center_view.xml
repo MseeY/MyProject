@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    >
+  <RelativeLayout 
+  	    android:id="@+id/rl"
+  	    android:layout_marginTop="10dp"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="fill_parent"
+  	    android:paddingLeft="5dp"
+  	    >
+  	      <TextView 
+        android:id="@+id/tv_username"
+        android:text="当前账号:HD8992"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/select_text_color"
+        android:textSize="19sp"
+        />
+    <ImageView
+        android:id="@+id/iv_arrow" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/selector_item_arrow"
+        android:layout_centerVertical="true"
+        />
+    
+  	</RelativeLayout>
+  
+    <ImageView 
+        android:id="@+id/v_line"
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#b6cbd3"
+        android:layout_below="@id/rl"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+ 
+
+</RelativeLayout>

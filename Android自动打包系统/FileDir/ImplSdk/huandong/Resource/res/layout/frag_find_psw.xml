@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/base_title_line"/>
+	
+	<TextView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#000000"
+	    android:textSize="15sp"
+	    android:text="已绑定手机号,通过手机验证找回密码"
+	    />
+	
+	<LinearLayout
+        android:id="@+id/ll_username_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/iv_username_margin"
+            android:src="@drawable/regist_uname_phone_icon" />
+
+        <EditText
+            android:id="@+id/et_base_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/et_margin"
+            android:layout_marginTop="@dimen/et_margin"
+            android:background="@null"
+            android:ems="13"
+            android:maxLength="11"
+            android:inputType="numberSigned"
+            android:hint="@string/quick_regist_uname_hint"
+            android:singleLine="true" />
+    </LinearLayout>
+    
+	<Button
+	    android:id="@+id/bt_get_code"
+	    android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_blue_bt"
+        android:text="验证身份"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_other_way_findpsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="通过其它方式找回"
+            android:textColor="#1db1e7"
+            android:textSize="@dimen/blue_font_size" />
+    </RelativeLayout>
+	
+</LinearLayout>

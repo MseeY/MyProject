@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="已向您的手机发送短信验证" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@color/dark_gray"
+            android:hint="请输入校验码"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/bt_reget_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/selector_green_btn"
+            android:text="重新获取(90)"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ll_psw_margin_top"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/iv_username_margin"
+            android:src="@drawable/edittext_lock" />
+
+        <EditText
+            android:id="@+id/et_base_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/et_margin"
+            android:layout_marginTop="@dimen/et_margin"
+            android:background="@null"
+            android:ems="13"
+            android:hint="新密码（6-20个字符，区分大小写）"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_verify_and_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_blue_bt"
+        android:text="重置密码并进入游戏"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</LinearLayout>

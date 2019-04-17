@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="ic_launcher" id="0x7f020000" />
+    <public type="layout" name="activity_main1" id="0x7f030000" />
+    <public type="string" name="app_name" id="0x7f040000" />
+    <public type="string" name="hello_world" id="0x7f040001" />
+    <public type="id" name="login" id="0x7f050000" />
+    <public type="id" name="pay" id="0x7f050001" />
+    <public type="id" name="intogameupload" id="0x7f050002" />
+    <public type="id" name="uplevel" id="0x7f050003" />
+    <public type="id" name="createrole" id="0x7f050004" />
+</resources>

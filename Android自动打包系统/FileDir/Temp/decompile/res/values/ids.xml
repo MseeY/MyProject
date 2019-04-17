@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="login">false</item>
+    <item type="id" name="pay">false</item>
+    <item type="id" name="intogameupload">false</item>
+    <item type="id" name="uplevel">false</item>
+    <item type="id" name="createrole">false</item>
+</resources>

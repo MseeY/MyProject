@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:text="您是否要离开游戏？"
+        android:layout_height="wrap_content"/>
+	<LinearLayout 
+	    android:layout_marginTop="40dp"
+	    android:layout_marginBottom="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/bt_exit_game"
+	        android:layout_width="180dp"
+	        android:layout_height="wrap_content"
+	        android:text="退出游戏"
+	        android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+	        android:background="@drawable/selector_blue_bt"/>
+	    <Button 
+	        android:id="@+id/bt_continue"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="180dp"
+	        android:layout_height="wrap_content"
+	        android:text="继续游戏"
+	        android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+	        android:background="@drawable/selector_green_btn"/>
+	</LinearLayout>
+</LinearLayout>

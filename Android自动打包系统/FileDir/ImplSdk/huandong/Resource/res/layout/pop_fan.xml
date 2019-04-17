@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/rl_contanier"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ppp"
+        >
+         <TextView
+	        android:id="@+id/dddc" 
+	        android:layout_width="50dp"
+	        android:layout_height="30dp"
+	        android:text="公告"
+	         android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:textColor="#000000"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="5dp"
+        />
+        <TextView
+	        android:id="@+id/tv_center" 
+	        android:layout_width="70dp"
+	        android:layout_height="30dp"
+	        android:text="用户中心"
+	        android:layout_toRightOf="@id/dddc"
+	        android:gravity="center"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="8dp"
+	        android:textColor="#000000"
+	        android:textSize="14sp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
